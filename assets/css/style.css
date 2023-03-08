@@ -1,19 +1,25 @@
+/* MAIN FONT */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800;1000&family=Open+Sans:wght@300;500;600;700;800&display=swap');
+
+/* VARIABLES */
+:root {
+    --main-color: #121422;
+    --margin-left: 10px;
+}
+/* BASE */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  
-body {
-    font-family: 'Nunito', sans-serif;
-}
-header {
-    height:100vh;
-    background-color: #121422;
-    color: #fff;
-    font-size: 40px;
-}
 
+  html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
 
 section {
     height: 500px;
@@ -21,36 +27,17 @@ section {
     border: solid #000
 }
 
-
 footer {
-    height:500px;
+    height: 200px;
     background-color: #000;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-}
-
-ul {
-    display: flex;
-    list-style-type: none;
-    width: 500px;
-    justify-content: space-around;
-    font-size: 30px;
-}
-
-li {
-    text-decoration: none;
-}
-
-h1 {
-    font-size: 90px;
-    margin: 0;
-}
-
-.header-text {
-    margin-left: 40px;
+/* HEADER */
+header {
+    height:100vh;
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 40px;
 }
 
 button {
@@ -58,8 +45,67 @@ button {
     height: 50px;
     background-color: #fff;
     font-size: 30px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border-radius: 45px;
     cursor: pointer;
-    color: #121422;
+    color: var(--main-color);
 }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header li {
+    text-decoration: none;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    width: 500px;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+header img {
+    height: 50px;
+    margin: 5px;
+    margin-left: var(--margin-left);
+}
+
+.main-header {
+    font-size: 90px;
+    margin: 0;
+}
+
+.header-text {
+    margin-left: 70px;
+    padding-top: 200px;
+}
+
+/* About me Section */
+.about-me-section h1 {
+    font-size: 50px;
+    margin-left: var(--margin-left);
+}
+
+.about-me-section p {
+    font-size: 30px;
+    margin-left: var(--margin-left);
+}
+
+/* My work section */
+.my-work-section h1 {
+    font-size: 50px;
+    margin-left: var(--margin-left);
+}
+
+/* Contact me section */
+.contact-me-section h1 {
+    font-size: 50px;
+    margin-left: var(--margin-left);
+}
+
+
+
+
