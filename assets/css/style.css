@@ -50,24 +50,20 @@ button {
     color: var(--main-color);
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
+/* NAVIGATION BAR */
+.navBar {
+    width: 90%;
+    margin: 0 auto;
 }
 
-header li {
-    text-decoration: none;
+nav li {
+    color: #fff;
+    list-style: none;
 }
 
-header ul {
-    display: flex;
-    list-style-type: none;
-    width: 500px;
-    justify-content: space-around;
-    font-size: 30px;
-}
 
-header img {
+
+header .logo {
     height: 50px;
     margin: 5px;
     margin-left: var(--margin-left);
@@ -81,6 +77,14 @@ header img {
 .header-text {
     margin-left: 70px;
     padding-top: 200px;
+}
+
+.pixelAvatar {
+    position: absolute;
+    right: 300px;
+    top: 200px;
+    height: 500px;
+    width: 500px;
 }
 
 /* About me Section */
